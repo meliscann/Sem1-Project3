@@ -1,7 +1,8 @@
 //  Melis Can - 220504019
 //  PROGRAMMING PROJECT 3
 
-//Question 1 
+//Question 1: Convert a char string that contains only digits to an int type value using a loop. 
+//For example, string (char array) “345” should be 345 (int).
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -19,9 +20,7 @@ int main() {
 	return 0;
 }
 
-
-
-//Question 2
+//Question 2: Write your program for Question 1 recursively as well.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -43,16 +42,8 @@ int main() {
 	return 0;
  }
 
-
-
-
-
-
-
-
-
-
-//Question 3
+//Question 3: Convert an int type value to its corresponding char array using a loop. The opposite
+//direction of Questions 1 and 2.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -71,9 +62,7 @@ int main() {
 return 0;
 }
 
-
-
-//Question 4
+//Question 4: Write your program for Question 3 recursively as well.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -97,16 +86,10 @@ int main() {
 return 0;
 }
 
+//Question 5: Given a string, find out if the string reads the same backwards and forwards. For
+//example, “anna”, “12321”, “racecar”, “radar”, “civil”, “level” are such strings. Find out if a
+//given string is or is not using a loop.
 
-
-
-
-
-
-
-
-
-//Question 5
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -134,7 +117,8 @@ int main() {
 return 0; 
 }
 
-//Question 6
+//Question 6: Do Question 5 recursively.
+
 #include <stdio.h>
 #include <string.h>
 
@@ -160,7 +144,13 @@ int main() {
         printf("%s is not a palindrome.", mel);
     }
     return 0;  }
-//Question 7
+
+/* Question 7: Assume that you are given a char array (string) that contains integers where each
+integer is separated by a colon (:). Write a program that returns all the numbers (in string
+form) one by one. For example, if the line contains 23:124:1:67432
+Your program produces char arrays 23, 124, 1, 67432. Note that you do not know how
+many numbers exist in a string. You can assume that each “number” is not longer than 10
+character digits. Use a while loop for this question. */
 
 #include <stdio.h>
 #include <string.h>
@@ -180,10 +170,7 @@ int main() {
     return 0;
 }
 
-
-
-
-//Question 8
+//Question 8: Find the max of a number in an array of type int using recursion.
 
 #include <stdio.h>
 #include <string.h>
@@ -208,13 +195,7 @@ int main() {
     return 0;
 }
 
-
-
-
-
-
-
-//Question 9
+//Question 9: Find the length of a string (char array) using a loop.
 
 #include <stdio.h>
 #include <string.h>
@@ -233,9 +214,7 @@ int main() {
     return 0;
 }
 
-
-
-//Question 10
+//Question 10: Find the length of a string (char array) recursively.
 
 #include <stdio.h>
 #include <string.h>
@@ -260,15 +239,9 @@ int main() {
     return 0;
 }
 
+//Question 11: Read a string from keyboard (i) into a char array and (ii) into a char pointer. Print the
+//string to the terminal. Does your program work or does it crash? Explain. How do you fix it?
 
-
-
-
-
-
-
-
-//Question 11
 #include <stdio.h>
 #include <string.h> 
 
@@ -277,17 +250,17 @@ int main() {
     char *p;
     p=array;
 
-    printf("Enter a string: ");
-    gets(array);
+    printf("Enter a string: ");    // My program didn't work the first time because I wrote array=p instead of p=array. 
+    gets(array);                   //But we should equate p to array, not array to p.
 
     printf("String stored in array: %s\n", array);
     printf("String stored in pointer: %s", p);
 
     return 0;
 }
-	My program didn't work the first time because I wrote array=p instead of p=array. But we should equate p to array, not array to p.
 
-//Question 12
+//Question 12: Read a line from the keyboard. Print your line back to the terminal.
+
 #include <stdio.h>
 #include <string.h> 
 
@@ -296,9 +269,14 @@ int main() {
   printf("Enter a line: ");
   gets(line);
   printf("Line that you entered: %s", line);
-    return 0;  }
+    return 0;  
+}
 
-//Question 14
+//Question 13: Write a function that takes two strings s1 and s2, then it finds the first occurrence of s1
+// in s2 and returns the index of the first character of s1 in s2.
+
+//Question 14: Write a function that takes a char array and returns the reverse of the array (as a
+//separate char array) back. Write this function iteratively and recursively.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -321,7 +299,20 @@ int main() {
     printf("reversed word is: %s\n", reversed);
     return 0;
 }
-//Question 18
+
+/* Question 15: Write a function that takes a string, the delimiter (character that separates the pieces)
+and an integer i (the ith piece), that returns the ith piece if the ith piece exists (as a
+separate char array) or NULL if it does not exist. Your solution would be a general solution
+to Question 7. */
+
+//Question 16: Write a function that takes an array of type int and returns the max, min, and average
+//of the array back. The return type should be a struct with these three values.
+
+//Question 17: Write a C function that takes a string and returns the count of the total number of
+//words in it. A word is separated by a pace or a tab.
+
+//Question 18: Write a program in C to find the maximum occurring character in a string and its
+// number of occurrences. Return these two pieces of values back using a C struct.
 
 #include <stdio.h>
 #include <string.h> 
@@ -359,23 +350,9 @@ int main() {
     return 0;
 }
 
+//Question 19: Write a C function that takes a char array and removes characters in it except letters
+//and returns this string as a new array.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Question 19
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -397,10 +374,24 @@ int main() {
     return 0;
 }
 
+//Question 20: Write a C function that takes a char array and finds the largest and smallest word in it.
+//It returns the two strings using a struct.
 
+//Question 21: Write a C function that takes a string and replaces the spaces in it with a specific
+//character passed as the second argument. It returns the new string back.
 
+//Question 22: Write a C function that takes two char arrays: The first is a sentence (s) and the
+//second is a word (w). If w is repeated back to back, it removes one of them and returns the new string.
 
-//Question 25
+//Question 23: Write a C function that takes a sentence and returns the count of each character in it.
+//The function returns this information in a C struct.
+
+/* Question 24: Write a C function that takes a sentence that contains bracket characters '(', ')', '{', '}',
+'<', ‘>', '[' and ']' and checks if the passed string is valid or not. The input string will be valid
+when open brackets and closed brackets are the same type of brackets. The strings “<()>”,
+“[]()<>” are valid while the “[()” is not (missing ] bracket). */
+
+//Question 25: Print your name to the terminal.
 
 #include <stdio.h>
 #include <stdlib.h>
