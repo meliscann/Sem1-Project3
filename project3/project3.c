@@ -1,8 +1,4 @@
-//  Melis Can - 220504019
-//  PROGRAMMING PROJECT 3
-
-//Question 1: Convert a char string that contains only digits to an int type value using a loop. 
-//For example, string (char array) “345” should be 345 (int).
+//Question 1: Convert a char string that contains only digits to an int type value using a loop. For example, string (char array) “345” should be 345 (int).
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -42,8 +38,7 @@ int main() {
 	return 0;
  }
 
-//Question 3: Convert an int type value to its corresponding char array using a loop. The opposite
-//direction of Questions 1 and 2.
+//Question 3: Convert an int type value to its corresponding char array using a loop. The opposite direction of Questions 1 and 2.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -86,9 +81,8 @@ int main() {
 return 0;
 }
 
-//Question 5: Given a string, find out if the string reads the same backwards and forwards. For
-//example, “anna”, “12321”, “racecar”, “radar”, “civil”, “level” are such strings. Find out if a
-//given string is or is not using a loop.
+//Question 5: Given a string, find out if the string reads the same backwards and forwards. 
+//For example, “anna”, “12321”, “racecar”, “radar”, “civil”, “level” are such strings. Find out if a given string is or is not using a loop.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -146,7 +140,7 @@ int main() {
     return 0;  }
 
 /* Question 7: Assume that you are given a char array (string) that contains integers where each
-integer is separated by a colon (:). Write a program that returns all the numbers (in string
+integer is separated by a column (:). Write a program that returns all the numbers (in string
 form) one by one. For example, if the line contains 23:124:1:67432
 Your program produces char arrays 23, 124, 1, 67432. Note that you do not know how
 many numbers exist in a string. You can assume that each “number” is not longer than 10
@@ -239,8 +233,8 @@ int main() {
     return 0;
 }
 
-//Question 11: Read a string from keyboard (i) into a char array and (ii) into a char pointer. Print the
-//string to the terminal. Does your program work or does it crash? Explain. How do you fix it?
+//Question 11: Read a string from keyboard (i) into a char array and (ii) into a char pointer. Print the string to the terminal.
+// Does your program work or does it crash? Explain. How do you fix it?
 
 #include <stdio.h>
 #include <string.h> 
@@ -273,7 +267,7 @@ int main() {
 }
 
 //Question 13: Write a function that takes two strings s1 and s2, then it finds the first occurrence of s1
-// in s2 and returns the index of the first character of s1 in s2.
+//in s2 and returns the index of the first character of s1 in s2.
 
 //Question 14: Write a function that takes a char array and returns the reverse of the array (as a
 //separate char array) back. Write this function iteratively and recursively.
@@ -400,24 +394,6 @@ int main() {
 	printf("Melis Can");
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 FINDS MIN NUMBER WITHOUT STRUCT
 #include <stdio.h>
